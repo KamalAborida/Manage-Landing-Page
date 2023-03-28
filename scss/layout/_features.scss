@@ -1,0 +1,100 @@
+.features-container {
+  margin: 50px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.features {
+  width: 95%;
+
+  &__article {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__p {
+      line-height: 1.5em;
+      color: $Dark-Grayish-Blue;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      background-color: $Very-Pale-Red;
+      margin-bottom: 20px;
+      border-radius: 50px 0 0 50px;
+
+      .number {
+        padding: 0.7em 1.3em;
+        position: relative;
+        right: 10px;
+        margin-right: 5%;
+        background-color: $Bright-Red;
+        border-radius: 30px;
+        text-align: center;
+        padding: 0.5em 1em;
+        color: white;
+        font-weight: map-get($Font-Weights, 'bold');
+      }
+    }
+  }
+}
+
+
+@include query{
+  .features {
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  
+    &__article {
+      text-align: left;
+      width: 40%;
+      margin: 0;
+    }
+  
+    &__list {
+      width: 35%;
+    }
+  
+    &__item {
+      margin: 0;
+      margin-bottom: 40px;
+  
+      &__title {
+        background-color: unset;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+  
+        .number {
+          position: static;
+          position: absolute;
+          left: -80px;
+          width: 50px;
+          background-color: $Bright-Red;
+          border-radius: 30px;
+          text-align: center;
+          padding: 0.7em 1em;
+          color: white;
+          font-weight: map-get($Font-Weights, 'bold');
+        }
+      }
+    }
+  }
+}

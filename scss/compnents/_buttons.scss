@@ -1,0 +1,39 @@
+@use '../abstracts/variables';
+
+.btn {
+  border-radius: 30px;
+  border: 0;
+  padding: 1em 2em;
+  font-weight: map-get($Font-Weights , 'bold');
+
+  &--orange {
+    background-color: $Bright-Red;
+    color: white;
+    box-shadow: 0 5px 10px 0 darken($Bright-Red, 0);
+
+    &:hover {
+      background-color: lighten($Bright-Red, 20%);
+      box-shadow: 0 5px 20px 0 lighten($Bright-Red, 5%);
+      cursor: pointer;
+    }
+  }
+
+  &--white {
+    background-color: white;
+    color: $Bright-Red;
+    box-shadow: 0 5px 10px 0 darken($Bright-Red, 50%);
+
+    &:hover {
+      color: lighten($Bright-Red, 20%);
+      cursor: pointer;
+    }
+  }
+
+  &--no-shadow {
+    box-shadow: unset;
+
+    &:hover {
+      box-shadow: unset;
+    }
+  }
+}

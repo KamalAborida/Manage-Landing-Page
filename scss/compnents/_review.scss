@@ -1,0 +1,29 @@
+.review {
+  width: 90%;
+  background-color: $Vary-Light-Gray;
+  margin: 40px auto;
+  position: relative;
+  text-align: center;
+  padding: 2.5em 3em;
+  border-radius: 5px;
+
+
+  &__avatar {
+    width: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -5px;
+  }
+
+  &__name {
+    color: $Dark-Blue;
+    font-size: 1.1rem;
+    font-weight: map-get($Font-Weights, "bold");
+    margin: 20px 0;
+  }
+
+  &__comment {
+    color: $Dark-Grayish-Blue;
+    line-height: 1.5em;
+  }
+}

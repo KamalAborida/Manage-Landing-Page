@@ -1,0 +1,38 @@
+.background {
+  // background-color: black;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mobile-background {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  background: url("../images/bg-simplify-section-desktop.svg");
+  background-position: -900px -10px;
+  background-repeat: no-repeat;
+}
+
+@include query {
+  .background {
+    display: block;
+  }
+
+  body {
+    background: unset;
+  }
+
+  .mobile-background {
+    display: none;
+  }
+}

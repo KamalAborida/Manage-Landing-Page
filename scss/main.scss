@@ -1,0 +1,23 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+@import './abstracts/general-classes';
+
+@import './base/reset';
+@import './base/typography';
+
+@import './compnents/buttons';
+@import './compnents/article';
+@import './compnents/form';
+@import './compnents/list';
+@import './compnents/review';
+@import './compnents/reviews-swiper';
+@import './compnents/ham-menu';
+
+@import './layout/body';
+@import './layout/nav';
+@import './layout/main';
+@import './layout/reviews';
+@import './layout/features';
+@import './layout/pre-footer';
+@import './layout/footer';

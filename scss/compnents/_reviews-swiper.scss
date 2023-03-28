@@ -1,0 +1,29 @@
+.swiper {
+  width: 60px;
+  height: 20px;
+  margin: -20px auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ball {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid orangered;
+
+  &--closed {
+    background-color: orangered;
+  }
+
+  &:hover {
+    background-color: orangered;
+  }
+}
+
+@include query {
+  .swiper {
+    display: none;
+  }
+}

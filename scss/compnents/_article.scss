@@ -1,0 +1,17 @@
+.article {
+  width: 100%;
+
+  h1 {
+    font-size: $Font-Size-h1;
+    font-weight: map-get($Font-Weights, 'bold');
+    color: $Dark-Blue;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+  }
+
+  p {
+    color: $Dark-Grayish-Blue;
+    margin-bottom: 30px;
+    line-height: 2em;
+  }
+}

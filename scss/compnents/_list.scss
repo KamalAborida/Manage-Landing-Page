@@ -1,0 +1,46 @@
+.list {
+  display: flex;
+  justify-content: space-evenly;
+
+  a, li{
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--v {
+    flex-direction: column;
+  }
+
+  &--h {
+    flex-direction: row;
+    width: 50%;
+  }
+}
+
+.nav-item {
+
+  &--black {
+
+    a {
+      color: black;  
+    }
+
+    a:hover {
+      color: grey;
+    }
+  }
+
+  &--white {
+    a{
+      color: white;
+    }
+    
+
+    a:hover {
+      color: $Bright-Red;
+    }
+  }
+}

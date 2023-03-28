@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto;
+  z-index: 3;
+
+  img{
+    max-width: 100%;
+    z-index: 3;
+  }
+
+  .list {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@include query {
+  nav {
+    justify-content: space-evenly;
+    margin: 70px auto;
+    align-items: center;
+  
+    #hamburger{
+      display: none;
+    }
+
+    img{
+      height: 25px;
+    }
+  
+    .list {
+      display: flex;
+      align-items: center;
+      width: 40%;
+      font-size: 0.9rem;
+      font-weight: map-get($Font-Weights, 'medium');
+
+      a, li {
+        color: $Dark-Blue;
+      }
+    }
+  
+    button {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@mixin query {
+  @media screen and (min-width: 1000px) {
+    @content
+  }
+}
+
+
+@mixin make-list($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,50 @@
+.main {
+  width: 90%;
+  margin: 10px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+  &__img-div {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
+@include query{
+  .main {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin: 10px auto 100px auto;
+
+    &__img-div {
+      margin-bottom: 0;
+      order: 2;
+      width: 50%;
+    }
+
+    &__article {
+      width: 45%;
+      text-align: left;
+
+      h1 {
+        $Font-Size-h1: 3rem;
+        font-size: $Font-Size-h1;
+        margin-bottom: 40px;
+        line-height: 1.2em;
+      }
+
+      p {
+        width: 70%;
+        font-weight: map-get($Font-Weights, 'medium');
+      }
+    }
+  }
+}

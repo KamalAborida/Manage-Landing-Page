@@ -1,0 +1,38 @@
+.pre-footer {
+  background: url('../images/bg-simplify-section-desktop2.svg'), $Bright-Red;
+  background-position: -500px -80px;
+  background-size: 500%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 50px;
+  padding: 5em 1em;
+
+  &__h1 {
+    font-size: $Font-Size-h1;
+    font-weight: map-get($Font-Weights, 'bold');
+    width: 80%;
+    margin: 20px auto 30px auto;
+    color: white;
+  }
+}
+
+@include query{
+  .pre-footer {
+    background-position: 200px -50px;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6em 10em;
+    margin-top: 200px;
+
+    &__h1 {
+      width: 50%;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+  }
+}
